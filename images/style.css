@@ -1,0 +1,135 @@
+/*Core styles*/
+
+html, body {
+    font-size: 10px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 0rem;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    width: 100%;
+    max-width: 1400px;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    background-color: white;
+    margin: 0 auto; 
+    margin-bottom: 12rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .menu {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .menu a {
+    position: relative;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8b5cf6;
+    transition: width 0.3s ease;
+  }
+  .menu a:hover::after,
+  .menu a.active::after {
+    width: 100%;
+  }
+  .cta .btn {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 1.5rem 3rem;
+    border-radius: .8rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: background-color 0.1s ease;
+  }
+  .cta .btn:hover{
+    background-color:#7842f7;
+  }
+  .logo img{
+    width: 20rem;
+  }
+  .select select{
+    border: none;
+}
+
+/*/Navbar*/
+/*Main*/
+.main{
+    display: flex;
+    width: 100%;
+    justify-content:space-evenly;
+}
+.img{
+    width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/opachani_rasmi.jpg");
+    height: 600px;
+    box-shadow: -5rem -5rem #845BFC;
+    border-top-left-radius: 1rem;
+    margin-bottom: 6rem;
+}
+.main_h1{
+    font-size: 4.7rem;
+    line-height: 1.2;
+}
+.main_p{
+    font-size: 2rem;
+    width: 54rem;
+    line-height: 1.5;
+    margin-bottom: 3rem;
+}
+.main_p a{
+    color: black;
+}
+.request_button{
+    padding: 2rem 3.7rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #845BFC;
+    color: white;
+    font-size: 1.7rem;
+    transition: .1s ease;
+}
+
+.request_button:hover{
+    background-color: #7137fa;
+}
+/*Talk*/
+.talk{
+  width: 100%;
+  background-color:#845BFC;
+  height: 60rem;
+}

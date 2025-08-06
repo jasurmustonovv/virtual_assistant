@@ -1,0 +1,358 @@
+/*Core styles*/
+
+html, body {
+    font-size: 10px;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 auto;
+  }
+  
+  * {
+    box-sizing: border-box;
+    font-family: sans-serif;
+  }
+  
+  .navbar {
+    width: 100%;
+    max-width: 1400px;
+    height: 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 6rem;
+    background-color: white;
+    margin: 0 auto; 
+    margin-bottom: 12rem;
+  }
+  
+  .logo {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: 22px;
+  }
+  .menu {
+    display: flex;
+    gap: 30px;
+    font-weight: bold;
+    font-size: 1.8rem;
+  }
+  .menu a {
+    position: relative;
+    text-decoration: none;
+    color: #111;
+    font-weight: bold;
+    padding-bottom: 5px;
+  }
+.menu a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #8b5cf6;
+    transition: width 0.3s ease;
+  }
+  .menu a:hover::after,
+  .menu a.active::after {
+    width: 100%;
+  }
+  .cta .btn {
+    background-color: #8b5cf6;
+    color: white;
+    padding: 1.5rem 3rem;
+    border-radius: .8rem;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.5rem;
+    transition: background-color 0.1s ease;
+  }
+  .cta .btn:hover{
+    background-color:#7842f7;
+  }
+  .logo img{
+    width: 20rem;
+  }
+  .select select{
+    border: none;
+}
+
+/*/Navbar*/
+/*Main*/
+.main{
+    display: flex;
+    width: 100%;
+    max-width: 1536px;
+    justify-content:space-evenly;
+    align-items: center;
+    height: 700px;
+    margin: 0 auto; /* markazga joylashadi */
+}
+.main .div{
+  margin-top: -10rem;
+}
+.img{
+    width: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url("./images/opachani_rasmi.jpg");
+    height: 600px;
+    box-shadow: -5rem -5rem #845BFC;
+    border-top-left-radius: 1rem;
+    margin-bottom: 6rem;
+}
+.main_h1{
+    font-size: 4.7rem;
+    line-height: 1.2;
+}
+.main_p{
+    font-size: 2rem;
+    width: 54rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+}
+.main_p a{
+    color: black;
+}
+.request_button{
+    padding: 2rem 3.7rem;
+    border-radius: 1rem;
+    border: none;
+    background-color: #845BFC;
+    color: white;
+    font-size: 1.7rem;
+    transition: .1s ease;
+}
+
+.request_button:hover{
+    background-color: #7137fa;
+}
+/*Talk*/
+.talk{
+  max-width: 1536px;
+  width: 100%;
+  background-color:#845BFC;
+  height: 68rem;
+  margin: 0 auto;
+  display: flex;
+  
+}
+
+.talk_logo{
+  display: flex;
+  align-items: center;
+  padding-left: 17rem;
+  padding-top: 8rem;
+  margin-bottom: 1rem;
+}
+.talk_logo .talk_logo__h1{
+  color: white;
+  font-size: 4rem;
+  font-weight: 600;
+  margin-left: 1rem;
+}
+.location{
+  width: 8.5rem;
+  height: 8.5rem;
+  border: 1px solid white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.location_div{
+  display: flex;
+  width: 560px;
+  justify-content: center;
+  align-items:center;
+  margin-left: 6.5rem;
+  margin-bottom: 2rem;
+}
+.email_address_div{
+  display: flex;
+  width: 575px;
+  justify-content: center;
+  align-items:center;
+  margin-left: 6.5rem;
+}
+.telephone_div{
+  display: flex;
+  width: 532px;
+  justify-content: center;
+  align-items:center;
+  margin-left: 6.5rem;
+}
+.location_divv,
+.email_address_div,
+.telephone_div
+{
+  margin-left: 1rem;
+}
+.our_location{
+  font-size: 2.1rem;
+  color: white;
+  margin-bottom: 2rem;
+}
+.location_los_angeles,
+.info_company,
+.telephone_number
+{
+  font-size: 2.1rem;
+  color: white;
+  text-indent: 1rem;
+  line-height: 1.6;
+}
+.info_company a{
+  color: white;
+}
+.info_company,
+.telephone_number
+{
+  text-indent: 0;
+}
+/*forms*/
+.forms{
+  display: flex;
+  align-items: center;
+}
+.forms label{
+  color: white;
+  font-size: 1.7rem;
+}
+.forms input{
+  width: 30rem;
+  height: 5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.forms textarea{
+  width: 61rem;
+  height: 12rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+}
+.forms button{
+  width: 61rem;
+  height: 4.5rem;
+  padding: 1rem;
+  font-size: 1.6rem;
+  border-radius: 1rem;
+  border: none;
+}
+.forms button:hover{
+  background-color: #a898ce;
+  color: white;
+}
+
+/*blackbox*/
+.blackbox{
+  max-width: 1536px;
+  width: 100%;
+  background-color:#2B2933;
+  height: 60rem;
+  margin: 0 auto;
+}
+.virtual_assistant{
+  color: white;
+}
+.virtual_assistant{
+  max-width: 1536px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items:center;
+  position: relative;
+  top: 10rem;
+  margin-bottom: 10rem;
+}
+.assistant_services{
+  width: 500px;
+  font-size: 2rem;
+  text-align: center;
+  line-height: 1.8;
+  margin-left: 1rem;
+}
+.get_started{
+  padding: 2.2rem 3.3rem;
+  border-radius: 1rem;
+  background-color: #845BFC;
+  color: white;
+  font-size: 1.5rem;
+  border: none;
+}
+.get_started:hover{
+  background-color: white;
+  color: black;
+}
+/*hr*/
+.hr{
+  margin-top: 0;
+  padding-top: 0;
+  width: 1200px;
+  height: 1px;
+  border: 1px solid #464646;
+  justify-content: center;
+}
+/*footer*/
+footer nav{
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+footer nav h2{
+  font-size: 2.2rem;
+}
+footer nav div p a{
+  color: white;
+  font-size: 1.7rem;
+  text-decoration: none;
+}
+footer nav div{
+  height: 300px;
+}
+footer nav div p a:hover{
+  text-decoration: underline;
+  color: #7137fa;
+}
+
+.get_in_touch p{
+  font-size: 1.8rem;
+}
+.location_purple{
+  width: 330px;
+  display: flex;
+  align-items: center;
+  line-height: 1.7;
+}
+.activve a{
+  color: #7842f7;
+  text-decoration: underline;
+}
+.lastbox{
+  height: 100px;
+  background-color: #333333;
+  width: 100%;
+  max-width: 1536px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.lastbox p,
+.lastbox p a
+{
+  color: white;
+  font-size: 1.4rem;
+}
