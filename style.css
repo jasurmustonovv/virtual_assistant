@@ -361,7 +361,7 @@ footer nav div p a:hover{
   color: white;
   font-size: 1.4rem;
 }
-@media only screen and (max-width:884px){
+@media only screen and (max-width:1200px){
   .talk{
     display: flex;
     justify-content: center;
