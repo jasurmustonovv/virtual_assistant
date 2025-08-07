@@ -4,13 +4,13 @@ html, body {
     font-size: 10px;
     overflow-x: hidden;
     margin: 0;
-    padding: 0;
+    padding: 0 0rem;
   }
   
   .container {
     width: 100%;
     margin: 0 auto;
-    padding: 0 auto;
+    padding: 0 0rem;
   }
   
   * {
@@ -142,10 +142,10 @@ html, body {
   height: 68rem;
   margin: 0 auto;
   display: flex;
-  
 }
-
 .talk_logo{
+  max-width: 1536px;
+  width: 100%;
   display: flex;
   align-items: center;
   padding-left: 17rem;
@@ -250,6 +250,11 @@ html, body {
   background-color: #a898ce;
   color: white;
 }
+.forms input,
+.forms textarea,
+.forms button {
+  max-width: 100%;
+}
 
 /*blackbox*/
 .blackbox{
@@ -281,7 +286,7 @@ html, body {
   margin-left: 1rem;
 }
 .get_started{
-  padding: 2.2rem 3.3rem;
+  padding: 2rem 3.3rem;
   border-radius: 1rem;
   background-color: #845BFC;
   color: white;
@@ -355,4 +360,10 @@ footer nav div p a:hover{
 {
   color: white;
   font-size: 1.4rem;
+}
+@media only screen and (max-width:884px){
+  .talk{
+    display: flex;
+    justify-content: center;
+  }
 }
