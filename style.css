@@ -143,14 +143,18 @@ html, body {
   margin: 0 auto;
   display: flex;
 }
+.talk_items{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .talk_logo{
   max-width: 1536px;
   width: 100%;
   display: flex;
   align-items: center;
   padding-left: 17rem;
-  padding-top: 8rem;
-  margin-bottom: 1rem;
+  padding-top: 1rem;
 }
 .talk_logo .talk_logo__h1{
   color: white;
@@ -329,7 +333,7 @@ footer nav div p a{
 footer nav div{
   height: 300px;
 }
-footer nav div p a:hover{
+footer nav div p a:hover{ 
   text-decoration: underline;
   color: #7137fa;
 }
